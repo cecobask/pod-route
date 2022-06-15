@@ -1,0 +1,6 @@
+apiVersion: quay.io/v1alpha1
+kind: Podroute
+metadata:
+  name: podroute-sample
+spec:
+  # Add fields here
