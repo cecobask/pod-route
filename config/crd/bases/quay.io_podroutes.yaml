@@ -36,10 +36,13 @@ spec:
           spec:
             description: PodrouteSpec defines the desired state of Podroute
             properties:
-              foo:
-                description: Foo is an example field of Podroute. Edit podroute_types.go
-                  to remove/update
+              image:
+                description: container image string e.g. "quay.io/tdimov0/always200:latest"
                 type: string
+              replicas:
+                description: number of containers to spin up
+                format: int32
+                type: integer
             type: object
           status:
             description: PodrouteStatus defines the observed state of Podroute

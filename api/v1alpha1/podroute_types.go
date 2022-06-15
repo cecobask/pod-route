@@ -25,11 +25,10 @@ import (
 
 // PodrouteSpec defines the desired state of Podroute
 type PodrouteSpec struct {
-	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
-	// Important: Run "make" to regenerate code after modifying this file
-
-	// Foo is an example field of Podroute. Edit podroute_types.go to remove/update
-	Foo string `json:"foo,omitempty"`
+	// container image string e.g. "quay.io/tdimov0/always200:latest"
+	Image string `json:"image,omitempty"`
+	// number of containers to spin up
+	Replicas int32 `json:"replicas,omitempty"`
 }
 
 // PodrouteStatus defines the observed state of Podroute
